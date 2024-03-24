@@ -14,6 +14,7 @@
 #include <thread>
 #include <fstream>
 #include <mysql.h>
+#include <cstring>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -183,6 +184,45 @@ void CSERVERDlg::DatabaseOn()
 	{
 		AfxMessageBox(_T("DB 연결 성공"));
 	}
+	// MySQL과 비주얼 스튜디오가 사용하는 문자셋이 달라서 한글 깨짐 방지를 위해 아래 코드 3줄 추가
+	mysql_query(connection, "set session character_set_connection=euckr;");
+	mysql_query(connection, "set session character_set_results=euckr;");
+	mysql_query(connection, "set session character_set_client=euckr;");
+}
+void CSERVERDlg::Database_update(bool result)
+{
+	int n_iStat; //쿼리요청 후 결과 성공 실패
+	char n_chStr[1024];
+	/*CREATE TABLE result_table(
+	number INT PRIMARY KEY AUTO_INCREMENT,
+	filename TEXT NOT NULL,
+	result INT NOT NULL,
+	date DATE NOT NULL,
+	reason INT NOT NULL
+	);*/
+	if (result == false) {
+		strcpy_s(n_chStr,"INSERT INTO result_table SET result = 0, date = now() reason = 0");
+	}
+	else
+	{
+		strcpy_s(n_chStr,"INSERT INTO result_table SET result = 1, date = now() reason = 0");
+
+	char* n_chQuery = n_chStr;
+	n_iStat = mysql_query(&conn, n_chQuery);
+	if (n_iStat != 0) { //쿼리 요철 확인
+		fprintf(stderr, "Mysql query error : %s\n", mysql_error(&conn));
+		AfxMessageBox(_T("DB update error"));
+	}
+	else {
+		AfxMessageBox(_T("DB update success"));
+	}
+
+	sql_result = mysql_store_result(&conn); // 결과 확인하기
+	// 결과 출력
+	while ((sql_row = mysql_fetch_row(sql_result)) != NULL) {
+		printf("%s %s %s\n", sql_row[0], sql_row[1], sql_row[2]);
+	}
+	mysql_free_result(sql_result); //결과 비우기
 }
 
 // 사용자가 최소화된 창을 끄는 동안에 커서가 표시되도록 시스템에서
@@ -303,7 +343,8 @@ void CSERVERDlg::ClientThread(SOCKET hClntSock)
 		return;
 	}
 	//파이썬 함수 호출
-	Python_cint();
+	bool n_bResult = Python_cint();
+	Database_update(n_bResult);
 
 	CRect rect;
 	m_picture.GetWindowRect(rect);
@@ -323,7 +364,7 @@ void CSERVERDlg::ClientThread(SOCKET hClntSock)
 /*함수이름: Python_cint()
 기능: 파이썬 클라이언트와 파일 및 문자열 송수신 함수
 반환 값: bool 제품이 정상인지 아닌지 반환*/
-BOOL CSERVERDlg::Python_cint()
+bool CSERVERDlg::Python_cint()
 {
 	//m_clntSocks[0] = 파이썬
 	CString file = _T("C:/Users/lms/Documents/Cmfc_cnn_python/XX/cast_O (130).jpeg");

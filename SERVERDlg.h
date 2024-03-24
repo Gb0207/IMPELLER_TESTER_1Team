@@ -42,5 +42,7 @@ public:
 	void DatabaseOn();
 	void AcceptThread(SOCKET hServSock);
 	void ClientThread(SOCKET hClntSock);
-	BOOL Python_cint(); //파이썬 클라이언트와 파일 및 문자열 송수신 함수
+
+	bool Python_cint(); //파이썬 클라이언트와 파일 및 문자열 송수신 함수
+	void Database_update(bool result); //정상 불량 정보 데이터베이스에 넣는 함수
 };
