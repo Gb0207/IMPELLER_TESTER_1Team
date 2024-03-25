@@ -189,32 +189,44 @@ void CSERVERDlg::DatabaseOn()
 	mysql_query(connection, "set session character_set_results=euckr;");
 	mysql_query(connection, "set session character_set_client=euckr;");
 }
-void CSERVERDlg::Database_update(bool result)
+void CSERVERDlg::Database_result(std::string n_strImage)
 {
 	int n_iStat; //쿼리요청 후 결과 성공 실패
-	char n_chStr[1024];
-	/*CREATE TABLE result_table(
-	number INT PRIMARY KEY AUTO_INCREMENT,
-	filename TEXT NOT NULL,
-	result INT NOT NULL,
-	date DATE NOT NULL,
-	reason INT NOT NULL
-	);*/
-	if (result == false) {
-		strcpy_s(n_chStr,"INSERT INTO result_table SET result = 0, date = now() reason = 0");
-	}
-	else
-	{
-		strcpy_s(n_chStr,"INSERT INTO result_table SET result = 1, date = now() reason = 0");
+	std::string n_strStr = "UPDATE result_table SET result = 1 WHERE filename = """;
+	n_strStr.append(n_strImage);
+	n_strStr.append("""");
 
-	char* n_chQuery = n_chStr;
-	n_iStat = mysql_query(&conn, n_chQuery);
-	if (n_iStat != 0) { //쿼리 요철 확인
+	n_iStat = mysql_query(&conn, n_strStr.c_str());
+	if (n_iStat != 0) { //쿼리 요청 확인
 		fprintf(stderr, "Mysql query error : %s\n", mysql_error(&conn));
-		AfxMessageBox(_T("DB update error"));
+		AfxMessageBox(_T("DB result update error"));
 	}
 	else {
-		AfxMessageBox(_T("DB update success"));
+		std::cout << "DB result update success" <<std::endl;
+	}
+
+	sql_result = mysql_store_result(&conn); // 결과 확인하기
+	// 결과 출력
+	while ((sql_row = mysql_fetch_row(sql_result)) != NULL) {
+		printf("%s %s %s\n", sql_row[0], sql_row[1], sql_row[2]);
+	}
+	mysql_free_result(sql_result); //결과 비우기
+}
+void CSERVERDlg::Database_filename(std::string n_strImage)
+{
+	int n_iStat; //쿼리요청 후 결과 성공 실패
+
+	std::string n_strStr = "INSERT INTO result_table(filename, result, date, reason) VALUES(""";
+	n_strStr.append(n_strImage);
+	n_strStr.append(""", 0, now(), 0)");
+
+	n_iStat = mysql_query(&conn, n_strStr.c_str());
+	if (n_iStat != 0) { //쿼리 요청 확인
+		fprintf(stderr, "Mysql query error : %s\n", mysql_error(&conn));
+		AfxMessageBox(_T("DB filename update error"));
+	}
+	else {
+		std::cout << "DB filename update success" << std::endl;
 	}
 
 	sql_result = mysql_store_result(&conn); // 결과 확인하기
@@ -320,7 +332,7 @@ void CSERVERDlg::ClientThread(SOCKET hClntSock)
 		closesocket(hClntSock);
 		return;
 	}
-
+	std::cout << "이미지 데이터 수신 전" << std::endl;
 	// 이미지 데이터 수신
 	recvSize = recv(hClntSock, imageBuffer, imageSize, 0);
 	if (recvSize != imageSize)
@@ -330,8 +342,16 @@ void CSERVERDlg::ClientThread(SOCKET hClntSock)
 		closesocket(hClntSock);
 		return;
 	}
+	std::cout << "이미지 데이터 수신 후" << std::endl;
+	static int n_iconut = 1;
+	std::string n_strImage = "captured_image ";
+	n_strImage.append(std::to_string(n_iconut));
+	n_strImage.append(".jpg");
+	n_iconut++;
+	Database_filename(n_strImage); //데이터베이스에 데이터 추가
 
-	std::ofstream outputFile("captured_image.jpg", std::ios::out | std::ios::binary);
+	std::cout << "파일 저장 전" << std::endl;
+	std::ofstream outputFile(n_strImage, std::ios::out | std::ios::binary);
 	if (outputFile.is_open())
 	{
 		outputFile.write(imageBuffer, imageSize);
@@ -342,9 +362,13 @@ void CSERVERDlg::ClientThread(SOCKET hClntSock)
 		AfxMessageBox(_T("Failed to save image"));
 		return;
 	}
+	std::cout << "파일 저장 후" << std::endl;
 	//파이썬 함수 호출
 	bool n_bResult = Python_cint();
-	Database_update(n_bResult);
+	std::cout << "파이썬 호출 후" << std::endl;
+	if (n_bResult == true) {
+		Database_result(n_strImage);
+	}
 
 	CRect rect;
 	m_picture.GetWindowRect(rect);

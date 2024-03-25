@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#include <iostream>
 
 // CSERVERDlg 대화 상자
 class CSERVERDlg : public CDialogEx
@@ -44,5 +44,6 @@ public:
 	void ClientThread(SOCKET hClntSock);
 
 	bool Python_cint(); //파이썬 클라이언트와 파일 및 문자열 송수신 함수
-	void Database_update(bool result); //정상 불량 정보 데이터베이스에 넣는 함수
+	void Database_result(std::string n_strImage); //정상 불량 정보 데이터베이스에 넣는 함수
+	void Database_filename(std::string n_strImage); //클라이언트에게 수신 받은 이미지 저장할때 부여하는 파일 이름생성 및 데이터베이스에 넣는 함수
 };
