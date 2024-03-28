@@ -1,0 +1,6 @@
+﻿  UserSock.cpp
+C:\Users\lms\Documents\Visual Studio 2022\up\MFCSEVR\MFCSEVR\UserSock.cpp(43,16): warning C4244: '초기화 중': 'ULONGLONG'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/UserSock.cpp'을(를) 컴파일하는 중)
+  
+MFCSEVRDlg.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+  MFCSEVR.vcxproj -> C:\Users\lms\Documents\Visual Studio 2022\up\MFCSEVR\x64\Debug\MFCSEVR.exe
