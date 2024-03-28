@@ -4,12 +4,14 @@
 
 #pragma once
 #include "MYserv.h"
+#include "YOURserv.h"
 
 // CMFCSEVRDlg 대화 상자
 class CMFCSEVRDlg : public CDialogEx
 {
 private:
 	MYserv m_serv;
+	YOURserv m_cpp;
 
 // 생성입니다.
 public:

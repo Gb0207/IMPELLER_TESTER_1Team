@@ -45,9 +45,14 @@ BOOL CMFCSEVRDlg::OnInitDialog()
 	SetIcon(m_hIcon, TRUE);			// 큰 아이콘을 설정합니다.
 	SetIcon(m_hIcon, FALSE);		// 작은 아이콘을 설정합니다.
 
-	// TODO: 여기에 추가 초기화 작업을 추가합니다.
+	SetWindowPos(NULL, 100, 100, 0, 0, SWP_NOSIZE);
+	//python clnt
 	m_serv.Create(20202);
 	m_serv.Listen();
+
+	//c++MFC clnt
+	m_cpp.Create(20201);
+	m_cpp.Listen();
 
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
