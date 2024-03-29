@@ -1,0 +1,204 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNTDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCCLNTDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNTDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCCLNTDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MYclnt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MYclnt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCSEARCH.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCSEARCH.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCSEARCH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCSEARCH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MYclnt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MYclnt.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCCLNT.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0088 2$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCCLNT.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0088 2$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCCLNT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DF769209-F553-41FC-B6D3-0D81B943EEF1}|MFCCLNT\\MFCCLNT.vcxproj|solutionrelative:MFCCLNT\\MFCCLNT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MYclnt.cpp",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MYclnt.cpp",
+              "RelativeDocumentMoniker": "MFCCLNT\\MYclnt.cpp",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MYclnt.cpp",
+              "RelativeToolTip": "MFCCLNT\\MYclnt.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-27T12:05:03.283Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MFCCLNTDlg.cpp",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNTDlg.cpp",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCCLNTDlg.cpp",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNTDlg.cpp",
+              "RelativeToolTip": "MFCCLNT\\MFCCLNTDlg.cpp",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAwwOwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-27T11:26:34.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MYclnt.h",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MYclnt.h",
+              "RelativeDocumentMoniker": "MFCCLNT\\MYclnt.h",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MYclnt.h",
+              "RelativeToolTip": "MFCCLNT\\MYclnt.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-27T12:04:10.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MFCCLNTDlg.h",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNTDlg.h",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCCLNTDlg.h",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNTDlg.h",
+              "RelativeToolTip": "MFCCLNT\\MFCCLNTDlg.h",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-27T12:07:17.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MFCSEARCH.cpp",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCSEARCH.cpp",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCSEARCH.cpp",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCSEARCH.cpp",
+              "RelativeToolTip": "MFCCLNT\\MFCSEARCH.cpp",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-28T09:45:27.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MFCSEARCH.h",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCSEARCH.h",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCSEARCH.h",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCSEARCH.h",
+              "RelativeToolTip": "MFCCLNT\\MFCSEARCH.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-28T09:27:47.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MFCCLNT.rc - IDD_MFCCLNT_DIALOG - Dialog",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.rc",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCCLNT.rc",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.rc - IDD_MFCCLNT_DIALOG - Dialog",
+              "RelativeToolTip": "MFCCLNT\\MFCCLNT.rc - IDD_MFCCLNT_DIALOG - Dialog",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-28T09:28:35.112Z",
+              "EditorCaption": " - IDD_MFCCLNT_DIALOG - Dialog"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "gs_report.c",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\crt\\src\\vcruntime\\gs_report.c",
+              "ViewState": "AQIAALwBAAAAAAAAAAAUwNABAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-28T10:11:13.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MFCCLNT.rc - IDD_MFCSEARCH - Dialog",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.rc",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCCLNT.rc",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.rc - IDD_MFCSEARCH - Dialog",
+              "RelativeToolTip": "MFCCLNT\\MFCCLNT.rc - IDD_MFCSEARCH - Dialog",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-28T09:28:03.952Z",
+              "EditorCaption": " - IDD_MFCSEARCH - Dialog"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MFCCLNT.h",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.h",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCCLNT.h",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.h",
+              "RelativeToolTip": "MFCCLNT\\MFCCLNT.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-28T09:41:26.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MFCCLNT.cpp",
+              "DocumentMoniker": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.cpp",
+              "RelativeDocumentMoniker": "MFCCLNT\\MFCCLNT.cpp",
+              "ToolTip": "C:\\Users\\lms\\Documents\\Visual Studio 2022\\up\\MFCCLNT\\MFCCLNT\\MFCCLNT.cpp",
+              "RelativeToolTip": "MFCCLNT\\MFCCLNT.cpp",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-27T11:24:45.075Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
